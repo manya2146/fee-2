@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .section{
+            border: 2px solid red;
+            padding: 1rem;
+            margin: 10px auto;
+        }
+        .h1{
+            font-size: 40px;
+            text-align: center;
+        }
+        @media(max-width: 320px) {    
+            .section{
+                background-color: rgb(218, 194, 243);
+            }  
+            .h1{
+                color: rgba(75, 9, 9, 0.671);
+                text-transform:uppercase;
+            }
+            .p{
+                color: blue;
+            }
+        }
+        @media(orientation: landscape){
+            section{
+                background-color: aquamarine;
+            }
+            section h1{
+                text-transform: uppercase;
+            }
+            section p{
+                text-transform: capitalize;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="section">
+<h1 class="h1">Media Queries</h1>
+<p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iusto totam facilis quo earum magnam quos ratione similique. Ex aliquam vitae saepe vel error eligendi eaque. Totam id eos corrupti!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque pariatur cupiditate libero, est tempore accusamus sed? Laborum aliquid deserunt molestiae, tempore tenetur alias nostrum nesciunt ratione, fugit inventore, sed nam.
+</p>
+</section>
+</body>
+</html> , 
