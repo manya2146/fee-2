@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="college.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College Admission Form</h1>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="address">City:</label>
+                <input type="text" id="text" name="City" required>
+                <label for="address">State:</label>
+                <input type="text" id="text" name="state" required>
+                <label for="address">Permanent Address</label>
+                <textarea cols="20" rows="3" value="address"> 
+                </textarea>  
+                <label for="address">Temporary Address</label>
+                <textarea cols="20" rows="3" value="address"> 
+                </textarea>  
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+                <label for="highschool">High School Name:</label>
+                <input type="text" id="highschool" name="highschool" required>
+                <label for="address">High School Address:</label>
+                <textarea cols="10" rows="2" value="address"> 
+                </textarea>  
+                <label for="graduationYear">Year of Graduation:</label>
+                <input type="number" id="graduationYear" name="graduationYear" required>
+
+                <label for="gpa">GPA:</label>
+                <input type="text" id="gpa" name="gpa" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="personalStatement">Personal Statement:</label>
+                <textarea id="personalStatement" name="personalStatement" rows="4" required></textarea>
+
+                <label for="resume">Documents (PDF only):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf">
+                <label for="resume">Passport Size Photograph(JPG only):</label>
+                <input type="file" id="photograph" name="photograph" accept=".JPG">
+            </fieldset>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
